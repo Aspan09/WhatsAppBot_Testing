@@ -4,6 +4,7 @@ from flask_migrate import Migrate
 from .config import Config
 from .selenium_controller import bp as selenium_bp
 
+
 db = SQLAlchemy()
 migrate = Migrate()
 
@@ -20,3 +21,4 @@ def create_app():
     app.register_blueprint(selenium_bp)
 
     return app
+
